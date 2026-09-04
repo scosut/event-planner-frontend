@@ -1,0 +1,24 @@
+/* utility styles */
+.btn {
+    background: $nav-primary;
+    border: none;
+    color: $text-secondary;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.8rem;
+    min-width: 8rem;
+    padding: 0.8rem;
+    transition: background 0.5s ease-in-out;
+
+    &:hover {
+        background: rgba($nav-primary, 0.9);
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.hidden {
+    visibility: hidden;
+}

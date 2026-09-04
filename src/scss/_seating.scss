@@ -1,0 +1,201 @@
+#tables {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    @include atMedium {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .table {
+        background: url(/images/table.png) center center no-repeat;
+        height: 30rem;
+        margin: 1.5rem 0;
+        position: relative;
+        width: 30rem;
+
+        span {
+            font-size: 1.4rem;
+            line-height: 1;
+
+            i {
+                font-size: inherit;
+                display: block !important;
+                margin-bottom: 0.2rem;
+            }
+        }
+
+        .table-number {
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+
+        .seat-number-1,
+        .seat-number-2,
+        .seat-number-3,
+        .seat-number-4,
+        .seat-number-5,
+        .seat-number-6 {
+            font-size: 1.5rem;
+            position: absolute;
+        }
+
+        .seat-number-1,
+        .seat-number-4 {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .seat-number-2,
+        .seat-number-3 {
+            left: 72%;
+        }
+
+        .seat-number-5,
+        .seat-number-6 {
+            left: 26%;
+        }
+
+        .seat-number-2,
+        .seat-number-6 {
+            top: 37%;
+        }
+
+        .seat-number-3,
+        .seat-number-5 {
+            top: 56%;
+        }
+
+        .seat-number-1 {
+            top: 22.5%;
+        }
+
+        .seat-number-4 {
+            top: 71%;
+        }
+
+        .seat-1,
+        .seat-2,
+        .seat-3,
+        .seat-4,
+        .seat-5,
+        .seat-6 {
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .seat-1 {
+            background: url(/images/seat_01_off.png) bottom center no-repeat;
+            top: 0;
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+                background-image: url(/images/seat_01_on.png);
+            }
+        }
+
+        .seat-2 {
+            background: url(/images/seat_02_off.png) top center no-repeat;
+            right: 0;
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+                background-image: url(/images/seat_02_on.png);
+            }
+        }
+
+        .seat-3 {
+            background: url(/images/seat_03_off.png) top center no-repeat;
+            right: 0;
+            transition: background 0.5s ease-in-out;
+
+            &:hover {
+                background-image: url(/images/seat_03_on.png);
+            }
+        }
+
+        .seat-4 {
+            background: url(/images/seat_04_off.png) bottom center no-repeat;
+            bottom: 0;
+            transition: background 0.5s ease-in-out;
+
+            &:hover {
+                background-image: url(/images/seat_04_on.png);
+            }
+        }
+
+        .seat-5 {
+            background: url(/images/seat_05_off.png) top center no-repeat;
+            left: 0;
+            transition: background 0.5s ease-in-out;
+
+            &:hover {
+                background-image: url(/images/seat_05_on.png);
+            }
+        }
+
+        .seat-6 {
+            background: url(/images/seat_06_off.png) top center no-repeat;
+            left: 0;
+            transition: background 0.5s ease-in-out;
+
+            &:hover {
+                background-image: url(/images/seat_06_on.png);
+            }
+        }
+
+        .seat-1,
+        .seat-4 {
+            left: 50%;
+            height: 6.4rem;
+            position: absolute;
+            transform: translateX(-50%);
+            width: 6rem;
+        }
+
+        .seat-2,
+        .seat-6 {
+            height: 8.3rem;
+            position: absolute;
+            top: 20%;
+            width: 8rem;
+        }
+
+        .seat-3,
+        .seat-5 {
+            height: 8.3rem;
+            position: absolute;
+            top: 53%;
+            width: 8rem;
+        }
+
+        .table-number,
+        .seat-1 span,
+        .seat-2 span,
+        .seat-3 span,
+        .seat-4 span,
+        .seat-5 span,
+        .seat-6 span {
+            left: 50%;
+            position: absolute;
+            text-align: center;
+        }
+
+        .table-number,
+        .seat-1 span,
+        .seat-4 span {
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .seat-2 span,
+        .seat-3 span,
+        .seat-5 span,
+        .seat-6 span {
+            top: 45%;
+            transform: translate(-50%, -55%);
+        }
+    }
+}

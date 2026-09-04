@@ -1,0 +1,43 @@
+/* form styles */
+#form {
+    background: rgba($dashboard-primary, 0.15);
+    border: 0.1rem solid $border-primary;
+    border-radius: 0.7rem;
+    margin: 3rem auto;
+    max-width: 45rem;
+    padding: 0 2rem;
+    width: 100%;
+
+    .form-group {
+        font-family: inherit;
+        font-size: 1.8rem;
+        margin: 1.5rem 0;
+
+        h3 {
+            color: $heading-primary;
+            font-size: 3rem;
+        }
+
+        > label {
+            display: block;
+        }
+
+        input {
+            border: 0.1rem solid $border-primary;
+            border-radius: 0.4rem;
+            color: inherit;
+            font: inherit;
+            padding: 0.3rem 0.5rem;
+            width: 100%;
+
+            &:focus {
+                outline: 0.1rem solid $nav-primary;
+            }
+        }
+
+        .error {
+            color: $error-primary;
+            font-size: 1.6rem;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+/* list form styles */
+#list-form {
+    h3 {
+        margin-bottom: 1.5rem;
+    }
+
+    ul {
+        border: 0.1rem solid #d9d9d9;
+        list-style: none;
+        margin-bottom: 0.5rem;
+        max-width: 30rem;
+        max-height: 120px;
+        overflow-y: auto;
+        scrollbar-color: rgba($nav-primary, 0.6) transparent;
+        scrollbar-width: thin;
+
+        @include atMedium {
+            max-height: 130px;
+        }
+
+        li {
+            input[type='radio'][name='participants'] {
+                display: none;
+
+                ~ label.isChecked {
+                    background-color: rgba($dashboard-primary, 0.25);
+                }
+            }
+
+            input[type='radio'][name='materials'] {
+                display: none;
+
+                &:checked ~ label {
+                    background-color: rgba($dashboard-primary, 0.25);
+                }
+            }
+
+            label {
+                display: block;
+                padding: 0.2rem;
+
+                &:nth-child(n + 2) {
+                    cursor: pointer;
+                    padding-left: 1.5rem;
+
+                    &:hover {
+                        background: rgba($icon-primary, 0.1);
+                    }
+                }
+            }
+        }
+    }
+}

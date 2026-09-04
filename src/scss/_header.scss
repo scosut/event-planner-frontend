@@ -1,0 +1,31 @@
+/* header styles */
+#header {
+    background:
+        linear-gradient(
+            to bottom,
+            rgba($overlay-primary, 0.8),
+            rgba($overlay-primary, 0.8)
+        ),
+        url(/images/dancers_feet.jpg) top right/cover no-repeat;
+    height: auto;
+    min-height: 100vh;
+
+    &.secondary {
+        background:
+            linear-gradient(
+                to bottom,
+                rgba($overlay-primary, 0.8),
+                rgba($overlay-primary, 0.8)
+            ),
+            url(/images/dancers_feet_cropped.jpg) bottom right/cover no-repeat;
+        min-height: 37rem;
+
+        @include atSmall {
+            min-height: 25rem;
+        }
+
+        @include atMedium {
+            min-height: 22rem;
+        }
+    }
+}

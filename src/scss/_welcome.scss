@@ -1,0 +1,43 @@
+/* welcome styles */
+#welcome {
+    background: rgba($nav-primary, 0.4);
+    margin: 0 auto;
+    max-width: 42rem;
+    min-height: 42rem;
+    padding: 2.5rem;
+
+    @include atSmall {
+        margin: 7.5% 0 7.5% 7.5%;
+        padding: 3.2rem;
+    }
+
+    h3 {
+        color: $dashboard-primary;
+        font-size: 3.4rem;
+        line-height: 1;
+        margin-bottom: 2.5rem;
+
+        @include atSmall {
+            margin-bottom: 3.2rem;
+        }
+    }
+
+    p {
+        color: $text-secondary;
+        font-size: 2.4rem;
+        line-height: 1.4;
+        margin-bottom: 2.5rem;
+
+        @include atSmall {
+            margin-bottom: 3.2rem;
+        }
+    }
+
+    img {
+        align-self: center;
+        display: block;
+        height: 3.5rem;
+        margin: 0 auto;
+        width: 12.5rem;
+    }
+}
