@@ -10,7 +10,7 @@
     }
 
     .table {
-        background: url(/images/table.png) center center no-repeat;
+        background: url(../../public/images/table.png) center center no-repeat;
         height: 30rem;
         margin: 1.5rem 0;
         position: relative;
@@ -87,62 +87,68 @@
         }
 
         .seat-1 {
-            background: url(/images/seat_01_off.png) bottom center no-repeat;
+            background: url(../../public/images/seat_01_off.png) bottom center
+                no-repeat;
             top: 0;
             transition: all 0.5s ease-in-out;
 
             &:hover {
-                background-image: url(/images/seat_01_on.png);
+                background-image: url(../../public/images/seat_01_on.png);
             }
         }
 
         .seat-2 {
-            background: url(/images/seat_02_off.png) top center no-repeat;
+            background: url(../../public/images/seat_02_off.png) top center
+                no-repeat;
             right: 0;
             transition: all 0.5s ease-in-out;
 
             &:hover {
-                background-image: url(/images/seat_02_on.png);
+                background-image: url(../../public/images/seat_02_on.png);
             }
         }
 
         .seat-3 {
-            background: url(/images/seat_03_off.png) top center no-repeat;
+            background: url(../../public/images/seat_03_off.png) top center
+                no-repeat;
             right: 0;
             transition: background 0.5s ease-in-out;
 
             &:hover {
-                background-image: url(/images/seat_03_on.png);
+                background-image: url(../../public/images/seat_03_on.png);
             }
         }
 
         .seat-4 {
-            background: url(/images/seat_04_off.png) bottom center no-repeat;
+            background: url(../../public/images/seat_04_off.png) bottom center
+                no-repeat;
             bottom: 0;
             transition: background 0.5s ease-in-out;
 
             &:hover {
-                background-image: url(/images/seat_04_on.png);
+                background-image: url(../../public/images/seat_04_on.png);
             }
         }
 
         .seat-5 {
-            background: url(/images/seat_05_off.png) top center no-repeat;
+            background: url(../../public/images/seat_05_off.png) top center
+                no-repeat;
             left: 0;
             transition: background 0.5s ease-in-out;
 
             &:hover {
-                background-image: url(/images/seat_05_on.png);
+                background-image: url(../../public/images/seat_05_on.png);
             }
         }
 
         .seat-6 {
-            background: url(/images/seat_06_off.png) top center no-repeat;
+            background: url(../../public/images/seat_06_off.png) top center
+                no-repeat;
             left: 0;
             transition: background 0.5s ease-in-out;
 
             &:hover {
-                background-image: url(/images/seat_06_on.png);
+                background-image: url(../../public/images/seat_06_on.png);
             }
         }
 

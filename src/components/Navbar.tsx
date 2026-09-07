@@ -4,7 +4,10 @@ const Navbar = () => {
     return (
         <nav id="nav">
             <div className="nav-logo">
-                <img src="/images/dancer.png" alt="dancer" />
+                <img
+                    src={`${import.meta.env.BASE_URL}images/dancer.png`}
+                    alt="dancer"
+                />
                 <div className="nav-logo-text">
                     <h1>biannual retreat</h1>
                     <h2>Hillcrest Dancers</h2>

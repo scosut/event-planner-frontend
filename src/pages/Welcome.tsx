@@ -17,7 +17,10 @@ const Welcome = () => {
                     the festivities.
                 </p>
 
-                <img src="/images/swirl.png" alt="swirls" />
+                <img
+                    src={`${import.meta.env.BASE_URL}images/swirl.png`}
+                    alt="swirls"
+                />
             </div>
             <div className="flex-grow-1"></div>
         </>
