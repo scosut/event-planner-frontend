@@ -66,6 +66,10 @@
                 vertical-align: bottom;
             }
 
+            thead th:last-child {
+                text-align: right;
+            }
+
             thead tr,
             tbody tr:nth-child(even) {
                 background: rgba($dashboard-primary, 0.1);
@@ -76,8 +80,8 @@
                     width: 50%;
                 }
 
-                &:nth-child(n + 2) {
-                    width: 25%;
+                &:last-child {
+                    text-align: right;
                 }
 
                 button,
